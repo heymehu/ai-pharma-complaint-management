@@ -119,6 +119,7 @@ Gemini powers complaint extraction and the copilot using `gemini-2.5-flash`. `mo
 
 ## Deployment
 
-- **Frontend (Vercel):** connect `frontend/`, set `NEXT_PUBLIC_API_URL` to your API URL
-- **Backend (Railway):** deploy `backend/`, set `DATABASE_URL`, AI keys, `CORS_ORIGINS`
+- **Vercel:** import the repository root. `vercel.json` deploys the Next.js frontend and FastAPI backend as services and routes `/api/*` to the backend.
+- **Persistent data:** configure `DATABASE_URL` to a PostgreSQL database for production. SQLite is suitable only for local development or temporary demos.
+- **AI:** set `GOOGLE_API_KEY` in Vercel project environment variables to enable Gemini extraction and copilot features.
 - **Docker:** `docker compose up --build`

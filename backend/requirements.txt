@@ -1,0 +1,28 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+sqlalchemy>=2.0.36
+alembic>=1.14.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-multipart>=0.0.20
+python-jose[cryptography]>=3.3.0
+httpx>=0.28.0
+reportlab>=4.2.0
+aiofiles>=24.1.0
+email-validator>=2.2.0
+greenlet>=3.1.0
+aiosqlite>=0.20.0
+pypdf>=5.1.0
+python-docx>=1.1.0
+Pillow>=11.0.0
+boto3>=1.35.0
+numpy>=1.26.0
+google-genai>=1.0.0
+# Legacy (optional): google-generativeai>=0.8.0
+
+# Production PostgreSQL (install when using Postgres):
+# psycopg2-binary>=2.9.10
+# Optional vector search (Python < 3.14):
+# faiss-cpu>=1.8.0
+# langchain>=0.3.0
+# langgraph>=0.2.0
